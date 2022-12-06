@@ -4,7 +4,7 @@ export const MotoData = [
         make: "Honda",
         year: "2023",
         type: "Sports",
-        image: "",
+        image: "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
         cc: "1000",
         skills: "Advanced"
     },
@@ -13,7 +13,7 @@ export const MotoData = [
         make: "Harley Davidson",
         year: "2019",
         type: "Cruiser",
-        image: "",
+        image: "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
         cc: "883",
         skills: "Moderate"
     },
@@ -22,7 +22,7 @@ export const MotoData = [
         make: "Kawasaki",
         year: "2020",
         type: "Sports",
-        image: "",
+        image: "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
         cc: "400",
         skills: "Beginner"
     }
