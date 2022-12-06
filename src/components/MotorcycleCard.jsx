@@ -6,16 +6,14 @@ function MotorcycleCard(props) {
 
     const { motorcycle } = props;
 
-    console.log("image2", img2)
-
         return (
             <div>
                 <img src={motorcycle.image}/>
                 <h1>{motorcycle.make}</h1>
                 <p>{motorcycle.model}</p>
                 <p>{motorcycle.year}</p>
-                <p>{motorcycle.css}</p>
-                <p>{motorcycle.skill}</p>
+                <p>{motorcycle.cc}</p>
+                <p>{motorcycle.skills}</p>
             </div>
         )
 }
