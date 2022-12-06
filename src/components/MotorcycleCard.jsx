@@ -7,7 +7,7 @@ function MotorcycleCard(props) {
     const { motorcycle } = props;
 
         return (
-            <div>
+            <div className="info">
                 <img src={motorcycle.image}/>
                 <h1>{motorcycle.make}</h1>
                 <p>Model</p>

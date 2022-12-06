@@ -1,8 +1,9 @@
 import React from "react";
 import MotorcycleCard from "./MotorcycleCard";
 
-
+<div className="col-sm-12 text-center"></div>
 function Page2(props) {
+ 
 
   //This is our mock data
   const { MotoData } = props;
@@ -11,9 +12,11 @@ function Page2(props) {
     //Style each motorcyle in MotorcycleCard.jsx
   const mappedMotorcycles = MotoData.map((motorcycle, i) => {
     return (
+      
       <div key={i}>
         <MotorcycleCard motorcycle={motorcycle} />
       </div>
+      
     )
   })
   return (
