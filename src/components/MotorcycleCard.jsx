@@ -7,8 +7,12 @@ function MotorcycleCard(props) {
     const { motorcycle } = props;
 
         return (
+            <div className="col-sm-12 text-center">
+      <div className="hero-image">
+        <div className="hero-text">
             <div className="info">
-                <img src={motorcycle.image}/>
+                <img src={motorcycle.image}
+                class="PN"/>
                 <h1>{motorcycle.make}</h1>
                 <p>Model</p>
                 <p>{motorcycle.model}</p>
@@ -18,7 +22,7 @@ function MotorcycleCard(props) {
                 <p>{motorcycle.cc}</p>
                 <p>Skill</p>
                 <p>{motorcycle.skills}</p>
-            </div>
+            </div></div></div></div>
         )
 }
 

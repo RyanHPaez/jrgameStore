@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    
+    <div className="navigation  navbar-expand  ">
     <div className="navigation " to='/Home'>
       <NavLink className="nav-link" to="/Home">
               <h1 className="home" style={{ fontSize: "45px" }}>
@@ -51,8 +51,11 @@ function Navigation() {
               <option>Dual Sport</option>              
             </select>
           </div>
+          
 
         </ul>
+        
+      </div>
       </div>
     
   );
