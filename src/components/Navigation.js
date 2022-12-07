@@ -3,12 +3,15 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <div className="navigation  navbar-expand  ">
-    <div className="navigation " to='/Home'>
+    <div className="Head  navbar-expand  ">
+    <div className="Head " to='/Home'>
       <NavLink className="nav-link" to="/Home">
-              <h1 className="home" style={{ fontSize: "45px" }}>
-              Moto Info
-              </h1>
+      <img
+              src={require("../images/infomoto.jpg")}
+              alt="motoinfo"
+              id="header"
+              
+            ></img>
             </NavLink>
       
       
@@ -16,7 +19,7 @@ function Navigation() {
           <li className="nav-item-home ">
             <NavLink className="nav-link" to="/Home">
               <i className="home" style={{ fontSize: "18px" }}>
-                Home
+                News
               </i>
             </NavLink>
           </li>
@@ -25,6 +28,7 @@ function Navigation() {
 
           <div className="dropdown">
             <select className="dropbtn">
+            <option>Skill Level</option>
               <option>Beginner</option>
               <option>Moderate</option>
               <option>Advanced</option>

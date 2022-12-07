@@ -86,34 +86,52 @@ body {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-img {  
+/* img {  
   height: auto;
   position: relative;  
   width:50vw;  
   background-position: center;
   display: flex;
-}
+} */
 
 .navigation{
-  width: 60%;
+  width: 60vw;
+  height: auto;
 }
 
-.hero-image {  
-  background-repeat: no-repeat;    
-  height: 820px;
-  position: relative;
-  width: 100%;  
-  background-position: center;
-  display: flex;
+#H2r{    
+  height: auto;
+  margin-top: 40px; 
+  width: 60vw;    
 }
 
-.hero-text {    
-  position:relative;
-  top: 50%;
-  left: 50%;
+.hero-image {    
+  display: inline-flex;
+}
+
+.hero-home {    
+  position:relative;  
+  left: 30%;
+  margin-right: auto;
+  margin-left: auto;
   transform: translate(-50%, -50%);
   display: block;  
+  
 }
+
+.hero-home1{
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* .hero-type {    
+  position:relative;
+  top:50%; 
+  margin-right: auto;
+  margin-left: auto;
+  transform: translate(-50%, -50%);
+  display: inline-flex;  
+} */
 
 .CN {
   display: block;
@@ -125,18 +143,21 @@ img {
   box-shadow: 0px 5px 25px 0px #005878;
 }
 
-.PN{
+.topbikes{
   box-shadow: 0px 5px 25px 0px #005878;
-
+height: auto;
+width: 50vw;
+margin-top: 50px;
+margin-left: auto;
+  margin-right: auto;
 }
 
-.info{
-  position:relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;  
-}
+/* .info{
+  
+  top: 200%;
+  
+  
+} */
 
 .MuiPaper-root{
   width: 20%;
@@ -147,6 +168,15 @@ img {
   width: 90px;
 } */
 
+#header{
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  position: relative;
+}
 
 
 
