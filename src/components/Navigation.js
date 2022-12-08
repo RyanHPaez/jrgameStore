@@ -4,17 +4,15 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <div className="Head  navbar-expand  ">
-    <div className="Head " to='/Home'>
-      <NavLink className="nav-link" to="/Home">
-      <img
-              src={require("../images/infomoto.jpg")}
-              alt="motoinfo"
-              id="header"
-              
-            ></img>
-            </NavLink>
-      
-      
+      <div className="Head " to="/Home">
+        <NavLink className="nav-link" to="/Home">
+          <img
+            src={require("../images/infomoto.jpg")}
+            alt="motoinfo"
+            id="header"
+          ></img>
+        </NavLink>
+
         <ul className="navbar-nav mx-auto justify-content-center">
           <li className="nav-item-home ">
             <NavLink className="nav-link" to="/Home">
@@ -24,11 +22,9 @@ function Navigation() {
             </NavLink>
           </li>
 
-          
-
           <div className="dropdown">
             <select className="dropbtn">
-            <option>Skill Level</option>
+              <option>Skill Level</option>
               <option>Beginner</option>
               <option>Moderate</option>
               <option>Advanced</option>
@@ -38,7 +34,7 @@ function Navigation() {
           <li className="nav-item-page2 ">
             <NavLink className="nav-link" to="/Page2">
               <i className="Page2" style={{ fontSize: "18px" }}>
-                Type
+                Motorcycle Type
               </i>
             </NavLink>
           </li>
@@ -52,16 +48,12 @@ function Navigation() {
               <option>Cruiser</option>
               <option>Touring</option>
               <option>Naked</option>
-              <option>Dual Sport</option>              
+              <option>Dual Sport</option>
             </select>
           </div>
-          
-
         </ul>
-        
       </div>
-      </div>
-    
+    </div>
   );
 }
 
