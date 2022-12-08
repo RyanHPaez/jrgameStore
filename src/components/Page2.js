@@ -12,7 +12,7 @@ function Page2(props) {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-12 text-center mt-5">
+          <div className="col-md-2text-center mt-5">
             <div key={i}>
               <MotorcycleCard motorcycle={motorcycle} />
             </div>
