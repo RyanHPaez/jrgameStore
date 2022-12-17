@@ -6,7 +6,6 @@ import { selectAllMotorcycles, getMotorcyclesStatus, getMotorcyclesError, fetchM
 
 function Page2() {
 
-  // console.log("Props.motodata", props)
   //This is our mock data
   // const { MotoData } = props;
 
@@ -40,9 +39,22 @@ function Page2() {
     mappedMotorcycles = <p>{motorcycleError}</p>
   }
 
+  // const mappedMotorcycles = MotoData.map((motorcycle, i) => {
+  //   return (
+  //     <div className="container">
+  //       <div className="row">
+  //         <div className="col-md-2text-center mt-5">
+  //           <div key={i}>
+  //             <MotorcycleCard motorcycle={motorcycle} />
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // });
   return (
-    <div className="col-sm-12 text-center">
-      <h1 className="font-weight-light">Hello, this is Test</h1>
+    <div className="mappedMotorcycles">
+      {/* <h1 className="font-weight-light">Hello, this is Test</h1> */}
       {mappedMotorcycles}
     </div>
   );
