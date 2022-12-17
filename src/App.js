@@ -1,9 +1,31 @@
 import "./index.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navigation, Home, Page2 } from "./components";
 import { MotoData } from "./mockdata/MotoData";
 
 function App() {
+
+  // const [MotoData, setMotoData] = useState([]);
+  // useEffect(()=>{
+  //   fetchApi();
+  // },[])
+
+  // const fetchApi = async () => {
+  //   try{
+  //     const MotoDataRaw = await axios.get("http://localhost:5000/motorcycles",{
+  //       params: {
+  //         _limit: 5
+  //       }
+  //     });
+  //     if(MotoDataRaw.status === 200){
+  //       setMotoData(MotoDataRaw.data)
+  //     }
+  //   }catch(e){
+  //     console.log("error", e)
+  //   }
+  // }
 
   return (
     <div className="App">
@@ -12,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/page2" element={<Page2 MotoData={MotoData}/>} />
+          <Route path="/page2" element={<Page2/>}  />
         </Routes>
       </Router>
     </div>
