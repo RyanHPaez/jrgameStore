@@ -1,6 +1,7 @@
 {
     "motorcycles": [
         {
+            "id": 3,
             "model": "CBR1000",
             "make": "Honda",
             "year": "2023",
@@ -10,6 +11,7 @@
             "skills": "Advanced"
         },
         {
+            "id": 2,
             "model": "Iron Sportster",
             "make": "Harley Davidson",
             "year": "2019",
@@ -19,6 +21,7 @@
             "skills": "Moderate"
         },
         {
+            "id": 1,
             "model": "z400",
             "make": "Kawasaki",
             "year": "2020",

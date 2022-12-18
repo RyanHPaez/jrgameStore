@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import MotorcycleCard from "./MotorcycleCard";
 import { useSelector, useDispatch } from "react-redux"
 import { selectAllMotorcycles, getMotorcyclesStatus, getMotorcyclesError, fetchMotoData } from "../redux/motorcycleSlice";
@@ -6,10 +6,10 @@ import { selectAllMotorcycles, getMotorcyclesStatus, getMotorcyclesError, fetchM
 
 function Page2() {
 
-  //This is our mock data
-  // const { MotoData } = props;
-
+  //useDispatch takes a function defined in our the slice 
   const dispatch = useDispatch();
+
+  //useSelector gets the data from the state from our slice
   const MotoData = useSelector(selectAllMotorcycles);
   const motorcycleStatus = useSelector(getMotorcyclesStatus);
   const motorcycleError = useSelector(getMotorcyclesError);
@@ -18,12 +18,10 @@ function Page2() {
     if (motorcycleStatus === "idle") {
       dispatch(fetchMotoData());
     }
-  }, [motorcycleStatus, dispatch])
-  //Motorcycles that we add to our mock data will automatically be added.
-  //Style each motorcyle in MotorcycleCard.jsx
+  }, [motorcycleStatus, dispatch]);
 
-  console.log("motorcycleStatus", motorcycleStatus)
   
+  //Conditionally rendering the data based on the state.status
   let mappedMotorcycles;
   if (motorcycleStatus === "loading") {
     mappedMotorcycles = <p>"Loading..."</p>;
@@ -39,19 +37,7 @@ function Page2() {
     mappedMotorcycles = <p>{motorcycleError}</p>
   }
 
-  // const mappedMotorcycles = MotoData.map((motorcycle, i) => {
-  //   return (
-  //     <div className="container">
-  //       <div className="row">
-  //         <div className="col-md-2text-center mt-5">
-  //           <div key={i}>
-  //             <MotorcycleCard motorcycle={motorcycle} />
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // });
+
   return (
     <div className="mappedMotorcycles">
       {/* <h1 className="font-weight-light">Hello, this is Test</h1> */}

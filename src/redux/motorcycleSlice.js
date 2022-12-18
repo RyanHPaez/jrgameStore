@@ -1,24 +1,25 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const dataUrl = "http://localhost:5000/motorcycles"
+const dataUrl = "http://localhost:5000/motorcycles";
 const initialState = {
     motorcylceData: [],
     status: "idle",
     error: ""
 }
 
+//Fetch function to get all motorcycles from mock data
 export const fetchMotoData = createAsyncThunk(
     '/motorcycles',
     async () => {
-
-       try{ const response = await axios.get(dataUrl);
-        // The value we return becomes the `fulfilled` action payload
-        return response.data;
-    }catch(e){
-        return e.message
+        try{ 
+            const response = await axios.get(dataUrl);
+            // The value we return becomes the `fulfilled` action payload
+            return response.data;
+        }catch(e){
+            return e.message
+        }
     }
-      }
     )
 
 const motorcycleSlice = createSlice(
