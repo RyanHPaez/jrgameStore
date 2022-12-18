@@ -29,7 +29,9 @@
             "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
             "cc": "400",
             "skill": "beginner"
-        }, {
+        }, 
+        
+        {
             "id": 4,
             "model": "CBR1000",
             "make": "Honda",
