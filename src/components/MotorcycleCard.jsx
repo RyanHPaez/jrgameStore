@@ -19,7 +19,7 @@ function MotorcycleCard(props) {
                 <img
                   src={motorcycle.image}
                   alt="motorcycles"
-                  class="topbikes "
+                  className="topbikes "
                 />
               </div>
             </div>

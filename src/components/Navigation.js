@@ -22,15 +22,6 @@ function Navigation() {
             </NavLink>
           </li>
 
-          <div className="dropdown">
-            <select className="dropbtn">
-              <option>Skill Level</option>
-              <option>Beginner</option>
-              <option>Moderate</option>
-              <option>Advanced</option>
-            </select>
-          </div>
-
           <li className="nav-item-page2 ">
             <NavLink className="nav-link" to="/Page2">
               <i className="Page2" style={{ fontSize: "18px" }}>
@@ -38,19 +29,6 @@ function Navigation() {
               </i>
             </NavLink>
           </li>
-
-          <div className="dropdown">
-            <select className="dropbtn">
-              <option>Sportbike</option>
-              <option>Sport </option>
-              <option>Dirt</option>
-              <option>Electric</option>
-              <option>Cruiser</option>
-              <option>Touring</option>
-              <option>Naked</option>
-              <option>Dual Sport</option>
-            </select>
-          </div>
         </ul>
       </div>
     </div>

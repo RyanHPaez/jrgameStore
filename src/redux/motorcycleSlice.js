@@ -10,10 +10,14 @@ const initialState = {
 
 //Fetch function to get all motorcycles from mock data
 export const fetchMotoData = createAsyncThunk(
-    '/motorcycles',
+    'motorcycles/fetchMotorcycles',
     async () => {
         try{ 
-            const response = await axios.get(dataUrl);
+            const response = await axios.get(dataUrl,{
+                params: {
+                    _limit: 5
+                  }
+            });
             // The value we return becomes the `fulfilled` action payload
             return response.data;
         }catch(e){
