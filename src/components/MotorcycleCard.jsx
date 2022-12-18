@@ -46,7 +46,7 @@ function MotorcycleCard(props) {
           </Grid>
           <Grid item xs={6}>
             Skill level:
-            {motorcycle.skills}
+            {motorcycle.skill}
           </Grid>
         </Grid>
       </div>

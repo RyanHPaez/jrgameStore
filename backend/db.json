@@ -8,7 +8,7 @@
             "type": "sport",
             "image": "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
             "cc": "1000",
-            "skills": "Advanced"
+            "skill": "advanced"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "type": "cruiser",
             "image": "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
             "cc": "883",
-            "skills": "Moderate"
+            "skill": "moderate"
         },
         {
             "id": 1,
@@ -28,7 +28,7 @@
             "type": "sport",
             "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
             "cc": "400",
-            "skills": "Beginner"
+            "skill": "beginner"
         }, {
             "id": 4,
             "model": "CBR1000",
@@ -37,7 +37,7 @@
             "type": "sport",
             "image": "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
             "cc": "1000",
-            "skills": "Advanced"
+            "skill": "advanced"
         },
         {
             "id": 5,
@@ -47,7 +47,7 @@
             "type": "cruiser",
             "image": "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
             "cc": "883",
-            "skills": "Moderate"
+            "skill": "moderate"
         },
         {
             "id": 6,
@@ -57,7 +57,7 @@
             "type": "sport",
             "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
             "cc": "400",
-            "skills": "Beginner"
+            "skill": "beginner"
         }, {
             "id": 7,
             "model": "CBR1000",
@@ -66,7 +66,7 @@
             "type": "sport",
             "image": "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
             "cc": "1000",
-            "skills": "Advanced"
+            "skill": "advanced"
         },
         {
             "id": 8,
@@ -76,7 +76,7 @@
             "type": "cruiser",
             "image": "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
             "cc": "883",
-            "skills": "Moderate"
+            "skill": "moderate"
         },
         {
             "id": 9,
@@ -86,7 +86,7 @@
             "type": "sport",
             "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
             "cc": "400",
-            "skills": "Beginner"
+            "skill": "beginner"
         }
     ]
 }

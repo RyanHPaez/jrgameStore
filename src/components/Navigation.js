@@ -25,7 +25,7 @@ function Navigation() {
           <li className="nav-item-page2 ">
             <NavLink className="nav-link" to="/Page2">
               <i className="Page2" style={{ fontSize: "18px" }}>
-                Motorcycle Type
+                Motorcycles
               </i>
             </NavLink>
           </li>

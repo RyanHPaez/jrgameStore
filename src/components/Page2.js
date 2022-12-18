@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import MotorcycleCard from "./MotorcycleCard";
 import { useSelector, useDispatch } from "react-redux"
 import { selectAllMotorcycles, getMotorcyclesStatus, getMotorcyclesError, fetchMotoData } from "../redux/motorcycleSlice";
+import Select from "./Select";
+import { typeOptionsArray } from "../optionsArray/optionsArray";
+import { skillOptionsArray } from "../optionsArray/optionsArray";
+import { filterFunction } from "../filterFunction";
 
 
 function Page2() {
@@ -14,10 +17,8 @@ function Page2() {
   const motorcycleStatus = useSelector(getMotorcyclesStatus);
   const motorcycleError = useSelector(getMotorcyclesError);
 
-  const [filterSelected, setFilteredSelected] = useState({
-    isTrue: false,
-    value: "all"
-  })
+  const [typeFilterSelected, setTypeFilterSelected] = useState("all");
+  const [skillFilterSelected, setSkillFilterSelected] = useState("all");
 
   useEffect(() => {
     if (motorcycleStatus === "idle") {
@@ -25,63 +26,32 @@ function Page2() {
     }
   }, [motorcycleStatus, dispatch]);
 
-  console.log("filter true?", filterSelected.isTrue)
-  console.log("filteredSelected", filterSelected.value);
-  //Conditionally rendering the data based on the state.status
-  let mappedMotorcycles;
+  //Conditionally rendering the data based on state.status
+  let mappedMotorcycles = [];
   if (motorcycleStatus === "loading") {
     mappedMotorcycles = <p>"Loading..."</p>;
   } else if (motorcycleStatus === "succeeded") {
-    if (filterSelected.isTrue) {
-      const filteredMotos = MotoData.filter((moto) => moto.type === filterSelected.value);
-      mappedMotorcycles = filteredMotos.map((motorcycle, i) => {
-        return (
-          <div key={i}>
-            <MotorcycleCard motorcycle={motorcycle} />
-          </div>
-        )
-      })
+    if (typeFilterSelected !== "all") {
+      const filteredMotos = MotoData.filter((moto) => moto.type === typeFilterSelected);
+      mappedMotorcycles = filterFunction(filteredMotos, skillFilterSelected);
     } else {
-      mappedMotorcycles = MotoData.map((motorcycle, i) => {
-        return (
-          <div key={i}>
-            <MotorcycleCard motorcycle={motorcycle} />
-          </div>
-        )
-      })
+      mappedMotorcycles = filterFunction(MotoData, skillFilterSelected);
     }
-
   } else if (motorcycleStatus === "failed") {
     mappedMotorcycles = <p>{motorcycleError}</p>
   }
 
-console.log("mappedmotors", mappedMotorcycles)
   return (
     <div className="mappedMotorcycles">
-      {/* <h1 className="font-weight-light">Hello, this is Test</h1> */}
       <div className="dropdown">
-        <select className="dropbtn" value={filterSelected.value} onChange={(e) => setFilteredSelected({ isTrue: true, value: e.target.value })}>
-          <option value="all" >All</option>
-          <option value="sportbike" >Sportbike</option>
-          <option value="sport" >Sport </option>
-          <option value="dirt" >Dirt</option>
-          <option value="electric" >Electric</option>
-          <option value="cruiser" >Cruiser</option>
-          <option value="touring" >Touring</option>
-          <option value="naked" >Naked</option>
-          <option value="dual" >Dual Sport</option>
-        </select>
+        <label htmlFor="type">Type</label>
+        <Select value={typeFilterSelected} setFilterSelected={setTypeFilterSelected} optionsArray={typeOptionsArray} />
       </div>
-
       <div className="dropdown">
-        <select className="dropbtn">
-          <option>Skill Level</option>
-          <option>Beginner</option>
-          <option>Moderate</option>
-          <option>Advanced</option>
-        </select>
+        <label htmlFor="skill">Skill</label>
+        <Select value={skillFilterSelected} setFilterSelected={setSkillFilterSelected} optionsArray={skillOptionsArray} />
       </div>
-      {mappedMotorcycles}
+      {mappedMotorcycles.length > 0 ? mappedMotorcycles : <p>We're Sorry, no bikes matching your search</p>}
     </div>
   );
 }
