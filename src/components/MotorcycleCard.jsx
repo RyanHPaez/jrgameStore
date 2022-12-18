@@ -20,43 +20,36 @@ function MotorcycleCard(props) {
                 <img
                   src={motorcycle.image}
                   alt="motorcycles"
-                  class="topbikes "
+                  className="topbikes "
                 />
               </div>
             </div>
           </div>
         </div>
-        <div className="col-sm-6">
-        
-            
-            <Grid
-              container
-              rowSpacing={3}
-              mt={7}
-              ml={18}
-              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-            >
-              <Grid item xs={16}>
-                <h1>{motorcycle.make}</h1>
-                Model:<br></br>
-                {motorcycle.model}
-              </Grid>
-              <Grid item xs={18}>
-                Year:<br></br>
-                {motorcycle.year}
-              </Grid>
-              <Grid item xs={17}>
-                Engine Size:<br></br>
-                {motorcycle.cc}
-              </Grid>
-              <Grid item xs={17}>
-                Skill level:<br></br>
-                {motorcycle.skills}
-              </Grid>
-            </Grid>{" "}
-            
-          
-        </div>
+        <Grid
+          container
+          rowSpacing={1}
+          mt={5}
+          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+        >
+          <Grid item xs={6}>
+            <h1>{motorcycle.make}</h1>
+            Model:
+            {motorcycle.model}
+          </Grid>
+          <Grid item xs={6}>
+            Year:
+            {motorcycle.year}
+          </Grid>
+          <Grid item xs={6}>
+            Engine Size:
+            {motorcycle.cc}
+          </Grid>
+          <Grid item xs={6}>
+            Skill level:
+            {motorcycle.skill}
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
