@@ -16,10 +16,12 @@ function Page2() {
   const MotoData = useSelector(selectAllMotorcycles);
   const motorcycleStatus = useSelector(getMotorcyclesStatus);
   const motorcycleError = useSelector(getMotorcyclesError);
+console.log("MotoData", MotoData)
 
   const [typeFilterSelected, setTypeFilterSelected] = useState("all");
   const [skillFilterSelected, setSkillFilterSelected] = useState("all");
 
+  console.log("filteredSelected", typeFilterSelected)
   useEffect(() => {
     if (motorcycleStatus === "idle") {
       dispatch(fetchMotoData());

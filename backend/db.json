@@ -1,7 +1,7 @@
 {
     "motorcycles": [
         {
-            "id": 3,
+            "id": 1,
             "model": "CBR1000",
             "make": "Honda",
             "year": "2023",
@@ -21,7 +21,7 @@
             "skill": "moderate"
         },
         {
-            "id": 1,
+            "id": 3,
             "model": "z400",
             "make": "Kawasaki",
             "year": "2020",
@@ -30,65 +30,55 @@
             "cc": "400",
             "skill": "beginner"
         }, 
-        
         {
             "id": 4,
-            "model": "CBR1000",
-            "make": "Honda",
-            "year": "2023",
+            "model": "Ninja ZX10R",
+            "make": "Kawasaki",
+            "year": "2020",
             "type": "sport",
-            "image": "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
+            "image": "https://wallpaperaccess.com/full/3411371.jpg",
             "cc": "1000",
             "skill": "advanced"
         },
         {
             "id": 5,
-            "model": "Iron Sportster",
-            "make": "Harley Davidson",
-            "year": "2019",
-            "type": "cruiser",
-            "image": "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
-            "cc": "883",
-            "skill": "moderate"
+            "model": "CRF300",
+            "make": "Honda",
+            "year": "2023",
+            "type": "dirt",
+            "image": "https://th.bing.com/th/id/OIP.fd482YEaEVaADyZk2t5vwwHaFM?pid=ImgDet&rs=1",
+            "cc": "300",
+            "skill": "beginner"
         },
         {
             "id": 6,
-            "model": "z400",
-            "make": "Kawasaki",
-            "year": "2020",
-            "type": "sport",
-            "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
-            "cc": "400",
-            "skill": "beginner"
-        }, {
+            "model": "FJR",
+            "make": "Yamaha",
+            "year": "2014",
+            "type": "touring",
+            "image": "https://i.pinimg.com/originals/fe/51/c6/fe51c6ad0870114847f792eeada6580f.jpg",
+            "cc": "1300",
+            "skill": "advanced"
+        }, 
+        {
             "id": 7,
-            "model": "CBR1000",
-            "make": "Honda",
-            "year": "2023",
-            "type": "sport",
-            "image": "/static/media/cbr1000.b77d724b7e218f5bf8e1.jpg",
-            "cc": "1000",
+            "model": "Hypersport HS",
+            "make": "Damon",
+            "year": "2021",
+            "type": "electric",
+            "image": "https://th.bing.com/th/id/R.3415dc44d412601813191a44eee2c443?rik=RxIfv6aSdUfj2Q&pid=ImgRaw&r=0",
+            "cc": "2000",
             "skill": "advanced"
         },
         {
             "id": 8,
-            "model": "Iron Sportster",
-            "make": "Harley Davidson",
-            "year": "2019",
-            "type": "cruiser",
-            "image": "/static/media/sportster.9f658986cb3bbc5653d7.jpg",
-            "cc": "883",
-            "skill": "moderate"
-        },
-        {
-            "id": 9,
-            "model": "z400",
-            "make": "Kawasaki",
+            "model": "Streetfighter",
+            "make": "Ducati",
             "year": "2020",
-            "type": "sport",
-            "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
-            "cc": "400",
-            "skill": "beginner"
+            "type": "naked",
+            "image": "https://th.bing.com/th/id/OIP.MoKWrLsUr2TdQU6ZEQI5MgHaE7?pid=ImgDet&rs=1",
+            "cc": "1200",
+            "skill": "moderate"
         }
     ]
 }

@@ -13,11 +13,7 @@ export const fetchMotoData = createAsyncThunk(
     'motorcycles/fetchMotorcycles',
     async () => {
         try{ 
-            const response = await axios.get(dataUrl,{
-                params: {
-                    _limit: 5
-                  }
-            });
+            const response = await axios.get(dataUrl);
             // The value we return becomes the `fulfilled` action payload
             return response.data;
         }catch(e){

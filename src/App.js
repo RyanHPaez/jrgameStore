@@ -10,26 +10,6 @@ import { MotoData } from "./mockdata/MotoData";
 
 function App() {
 
-  // const [MotoData, setMotoData] = useState([]);
-  // useEffect(()=>{
-  //   fetchApi();
-  // },[])
-
-  // const fetchApi = async () => {
-  //   try{
-  //     const MotoDataRaw = await axios.get("http://localhost:5000/motorcycles",{
-  //       params: {
-  //         _limit: 5
-  //       }
-  //     });
-  //     if(MotoDataRaw.status === 200){
-  //       setMotoData(MotoDataRaw.data)
-  //     }
-  //   }catch(e){
-  //     console.log("error", e)
-  //   }
-  // }
-
   return (
     <div className="App">
       <Router>
