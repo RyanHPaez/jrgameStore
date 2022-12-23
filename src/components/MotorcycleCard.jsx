@@ -5,8 +5,7 @@ import img2 from "../images/sportster.jpg";
 // eslint-disable-next-line
 import img3 from "../images/z400.jpg";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
+
 
 function MotorcycleCard(props) {
   const { motorcycle } = props;
