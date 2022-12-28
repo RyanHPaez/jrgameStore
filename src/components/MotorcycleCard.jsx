@@ -7,6 +7,7 @@ import img3 from "../images/z400.jpg";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import { Link } from "react-router-dom";
 
 function MotorcycleCard(props) {
   const { motorcycle } = props;
@@ -17,11 +18,13 @@ function MotorcycleCard(props) {
           <div className="hero-image ">
             <div className="hero-type ">
               <div className="info ">
-                <img
-                  src={motorcycle.image}
-                  alt="motorcycles"
-                  className="topbikes "
-                />
+                <Link to="/specs">
+                  <img
+                    src={motorcycle.image}
+                    alt="motorcycles"
+                    className="topbikes "
+                  />
+                </Link>
               </div>
             </div>
           </div>
