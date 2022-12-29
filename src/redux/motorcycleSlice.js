@@ -8,18 +8,34 @@ const initialState = {
     error: ""
 }
 
+const options = {
+    method: 'GET',
+    url:  'https://motorcycle-specs-database.p.rapidapi.com/make',
+    headers: {
+      'X-RapidAPI-Key': '0cad2368e9msh95f4fabb4b67d62p1c2b24jsnf9d5ace85b52',
+      'X-RapidAPI-Host': 'motorcycle-specs-database.p.rapidapi.com',
+      'X-Ratelimit-Limit':'1ms'
+    },
+    
+
+  };
+
+
 //Fetch function to get all motorcycles from mock data
 export const fetchMotoData = createAsyncThunk(
     'motorcycles/fetchMotorcycles',
-    async () => {
-        try{ 
-            const response = await axios.get(dataUrl);
-            // The value we return becomes the `fulfilled` action payload
-            return response.data;
-        }catch(e){
-            return e.message
-        }
-    }
+  
+
+
+
+axios.request(options,{ params:{_limit:5}}).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+})
+       
+ 
+    
     )
 
 const motorcycleSlice = createSlice(

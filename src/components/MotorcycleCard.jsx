@@ -5,7 +5,13 @@ import img2 from "../images/sportster.jpg";
 // eslint-disable-next-line
 import img3 from "../images/z400.jpg";
 import Grid from "@mui/material/Grid";
+<<<<<<< HEAD
 
+=======
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import { Link } from "react-router-dom";
+>>>>>>> cb6e66716a22dfeca2dc63ac03c08226bbb1ca9a
 
 function MotorcycleCard(props) {
   const { motorcycle } = props;
@@ -16,11 +22,13 @@ function MotorcycleCard(props) {
           <div className="hero-image ">
             <div className="hero-type ">
               <div className="info ">
-                <img
-                  src={motorcycle.image}
-                  alt="motorcycles"
-                  className="topbikes "
-                />
+                <Link to="/specs">
+                  <img
+                    src={motorcycle.image}
+                    alt="motorcycles"
+                    className="topbikes "
+                  />
+                </Link>
               </div>
             </div>
           </div>
