@@ -25,7 +25,7 @@
             "model": "z400",
             "make": "Kawasaki",
             "year": "2020",
-            "type": "sport",
+            "type": "naked",
             "image": "/static/media/z400.013b7de7ea59d39a7d5c.jpg",
             "cc": "400",
             "skill": "beginner"
@@ -78,6 +78,66 @@
             "type": "naked",
             "image": "https://th.bing.com/th/id/OIP.MoKWrLsUr2TdQU6ZEQI5MgHaE7?pid=ImgDet&rs=1",
             "cc": "1200",
+            "skill": "moderate"
+        },
+        {
+            "id": 9,
+            "model": "Yzf-R6",
+            "make": "Yamaha",
+            "year": "2008-2016",
+            "type": "Supersport",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Yamaha_YZF_R6_2006_red.jpg/1024px-Yamaha_YZF_R6_2006_red.jpg",
+            "cc": "599",
+            "skill": "moderate"
+        },
+        {
+            "id": 10,
+            "model": "Yzf-R1",
+            "make": "Yamaha",
+            "year": "2015-Present",
+            "type": "Superbike",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/2015_Yamaha_YZF-R1_crop.JPG/450px-2015_Yamaha_YZF-R1_crop.JPG",
+            "cc": "998",
+            "skill": "advanced"
+        },
+        {
+            "id": 11,
+            "model": "Yzf-R3",
+            "make": "Yamaha",
+            "year": "2015 - present",
+            "type": "Sport Bike",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2015_Yamaha_YZF-R3_right.JPG/1280px-2015_Yamaha_YZF-R3_right.JPG",
+            "cc": "321",
+            "skill": "beginner"
+        },
+        {
+            "id":12,
+            "model": "Ninja 400",
+            "make": "Kawasaki",
+            "year": "2018- present",
+            "type": "Sport Bike",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kawasaki_Ninja_400_KRT_SlantView_resized.jpg/1024px-Kawasaki_Ninja_400_KRT_SlantView_resized.jpg",
+            "cc": "399",
+            "skill": "beginner"
+        },
+        {
+            "id":13,
+            "model": "Multistrada",
+            "make": "Ducati",
+            "year": "2018- 2020",
+            "type": "sport",
+            "image": "https://mcn-images.bauersecure.com/wp-images/4564/aduacti-multistrada-1260s07.jpg",
+            "cc": "1262",
+            "skill": "moderate"
+        },
+        {
+            "id":14,
+            "model": "V-Strom",
+            "make": "Kawasaki",
+            "year": "2019- present",
+            "type": "Adventure",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/V-Strom650XT_ABS%EF%BC%882019%E5%B9%B4%EF%BC%89.jpg/330px-V-Strom650XT_ABS%EF%BC%882019%E5%B9%B4%EF%BC%89.jpg",
+            "cc": "650",
             "skill": "moderate"
         }
     ]

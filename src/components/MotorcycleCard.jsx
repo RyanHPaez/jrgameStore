@@ -5,20 +5,14 @@ import img2 from "../images/sportster.jpg";
 // eslint-disable-next-line
 import img3 from "../images/z400.jpg";
 import Grid from "@mui/material/Grid";
-<<<<<<< HEAD
-
-=======
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import { Link } from "react-router-dom";
->>>>>>> cb6e66716a22dfeca2dc63ac03c08226bbb1ca9a
 
 function MotorcycleCard(props) {
   const { motorcycle } = props;
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-12">
           <div className="hero-image ">
             <div className="hero-type ">
               <div className="info ">
@@ -39,20 +33,27 @@ function MotorcycleCard(props) {
           mt={5}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
-          <Grid item xs={6}>
+          <Grid item xs={12}>
             <h1>{motorcycle.make}</h1>
+            
+          </Grid>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={4}>
+            <h1>{motorcycle.Model}</h1>
             Model:
             {motorcycle.model}
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             Year:
             {motorcycle.year}
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={4}>
             Engine Size:
             {motorcycle.cc}
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             Skill level:
             {motorcycle.skill}
           </Grid>

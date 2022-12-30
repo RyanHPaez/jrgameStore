@@ -1,17 +1,8 @@
 import "./index.css";
-// eslint-disable-next-line
-import { useEffect, useState } from "react";
-// eslint-disable-next-line
-import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navigation, Home, Page2, Page3 } from "./components";
-<<<<<<< HEAD
-// eslint-disable-next-line
-import { MotoData } from "./mockdata/MotoData";
-=======
 import ApiTest from "./components/ApiTest";
 import Specs from "./pages/Specs";
->>>>>>> cb6e66716a22dfeca2dc63ac03c08226bbb1ca9a
 
 function App() {
 
